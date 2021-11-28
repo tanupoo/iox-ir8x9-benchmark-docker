@@ -3,7 +3,7 @@ FROM devhub-docker.cisco.com/iox-docker/ir800/base-rootfs as builder
 RUN opkg update
 RUN opkg install coreutils
 RUN opkg install git pkgconfig
-RUN opkg install iox-toolchain git pkgconfig
+RUN opkg install iox-toolchain
 WORKDIR /build
 RUN git clone https://github.com/akopytov/sysbench && \
 	cd sysbench && \
