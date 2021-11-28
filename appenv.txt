@@ -1,0 +1,11 @@
+# env.
+PROFILE=ir809@tlab
+APP_NAME=benchmark
+CPU_UNITS=512
+MEMORY_SIZE=64
+NB_TESTS=20
+NB_THREADS=2
+TARGET=sysbench
+EXEC_TIME=010000
+LOG_PATH="/data/logs"
+LOG_FILE="benchmark.log"

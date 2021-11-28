@@ -1,0 +1,8 @@
+{
+    "resources": {
+        "network": [{
+            "interface-name": "eth0",
+            "network-name": "VPG0"
+        }]
+    }
+}

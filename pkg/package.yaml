@@ -1,0 +1,24 @@
+descriptor-schema-version: "2.7"
+info:
+  name: ir8x9-benchmark
+  description: "Ubuntu Linux with sysbench"
+  version: "a1"
+app:
+  cpuarch: x86_64
+  type: docker
+  env:
+    PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  resources:
+    profile: custom
+    cpu: 512
+    memory: 64
+    disk: 2
+    network:
+    - interface-name: eth0
+      ports: {}
+  startup:
+    rootfs: rootfs.tar
+    target:
+    - /bin/sh
+    - -c
+    - /bin/benchmark.sh
